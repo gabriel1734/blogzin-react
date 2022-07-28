@@ -3,7 +3,7 @@ function Home() {
   return (
     <Styled.Wrapper>
       <div>
-        <h1>hello</h1>
+        <h1>Hello</h1>
       </div>
     </Styled.Wrapper>
   );
