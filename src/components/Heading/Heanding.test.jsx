@@ -83,9 +83,34 @@ describe('<Heading />', () => {
 
   it('should render correct heading element', () => {
     const { container } = renderTheme(<Heading as="h6">texto</Heading>);
-    const heading = screen.getByRole('heading', { name: 'texto' });
     const h6 = container.querySelector('h6');
 
     expect(h6.tagName.toLowerCase()).toBe('h6');
+  });
+  it('should match a snapshot', () => {
+    const { container } = renderTheme(<Heading as="h6">texto</Heading>);
+
+    expect(container).toMatchInlineSnapshot(`
+      .c0 {
+        color: #fff;
+        font-size: 6.2rem;
+        text-transform: none;
+      }
+
+      @media (max-width:768px) {
+        .c0 {
+          font-size: 4rem;
+          background-color: 'red';
+        }
+      }
+
+      <div>
+        <h6
+          class="c0"
+        >
+          texto
+        </h6>
+      </div>
+    `);
   });
 });
