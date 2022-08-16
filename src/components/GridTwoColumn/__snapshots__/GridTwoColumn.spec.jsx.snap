@@ -78,11 +78,11 @@ exports[`<GridTwoColumn /> should match a snapshot 1`] = `
         <div
           class="c3"
         >
-          <h1
+          <h2
             class="c4 c5"
           >
             Grid Two Column
-          </h1>
+          </h2>
           <p
             class="c6"
           >
