@@ -17,5 +17,22 @@ export const GlobalStyles = createGlobalStyle`
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: ${({ theme }) => theme.fonts.family.secondary};
+    margin: ${({ theme }) => theme.spacings.large} 0;
+  }
+  p{
+    margin: ${({ theme }) => theme.spacings.medium} 0;
+  }
+  ul, ol{
+    margin: ${({ theme }) => theme.spacings.medium} 0;
+    padding: ${({ theme }) => theme.spacings.medium} 0;
+  }
+  a{
+    color: ${({ theme }) => theme.colors.secondaryColor};
+    font-weight: 600;
+    text-decoration: none;
+  }
+  a:hover{
+    font-weight: 700;
+    transition: all .8s ease;
   }
 `;

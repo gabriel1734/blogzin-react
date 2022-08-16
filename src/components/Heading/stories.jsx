@@ -25,6 +25,9 @@ Light.parameters = {
     default: 'light',
   },
 };
+Dark.parameters = {
+  colorDark: false,
+};
 
 Light.args = {
   children: 'O texto escuro',
