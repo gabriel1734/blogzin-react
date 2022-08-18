@@ -16,11 +16,11 @@ describe('<TextComponent />', () => {
       }
 
       <div>
-        <p
+        <div
           class="c0"
         >
           Children
-        </p>
+        </div>
       </div>
     `);
   });
