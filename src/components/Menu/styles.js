@@ -10,14 +10,17 @@ const menuVisible = () => css`
 export const Container = styled.div`
   ${({ theme, visible }) => css`
     position: fixed;
+    display: flex;
+    align-items: center;
     z-index: 5;
     top: 0;
     left: 0;
     right: 0;
+    padding-top: 3.5rem;
     border-bottom: ${theme.colors.mediumGray};
     background-color: ${theme.colors.white};
     transition: all .3s ease-in-out;
-    
+    height: 10vh;
 
     > ${SectionContainer}{
       padding-top: 0;
