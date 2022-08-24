@@ -32,7 +32,10 @@ export const Container = styled.div`
       margin-top: 0;
       margin-bottom: 0;
     }
-
+    @media (max-width: 1180px) {
+      height: 18vh;
+      padding-top: 0;
+    }
     @media ${theme.media.lteMedium} {
       height: 100vh;
       visibility: hidden;

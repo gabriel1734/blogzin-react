@@ -141,6 +141,13 @@ exports[`<Menu /> should render Logo and Main Menu Nav 1`] = `
   overflow: hidden;
 }
 
+@media (max-width:1180px) {
+  .c2 {
+    height: 18vh;
+    padding-top: 0;
+  }
+}
+
 @media (max-width:768px) {
   .c2 {
     height: 100vh;

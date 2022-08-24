@@ -1,8 +1,8 @@
 import { Base } from '../Base';
-import { mockBase } from '../Base/stories';
+import mock from '../Base/mock';
 
 function App() {
-  return <Base {...mockBase} />;
+  return <Base {...mock} />;
 }
 
 export default App;
