@@ -27,12 +27,11 @@ exports[`<Menu /> should render Logo and Main Menu Nav 1`] = `
   top: 0;
   left: 0;
   right: 0;
-  padding-top: 3.5rem;
   border-bottom: #DDDDDD;
   background-color: #fff;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  height: 10vh;
+  height: 12vh;
 }
 
 .c2 > .c3 {
@@ -139,13 +138,6 @@ exports[`<Menu /> should render Logo and Main Menu Nav 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-}
-
-@media (max-width:1180px) {
-  .c2 {
-    height: 18vh;
-    padding-top: 0;
-  }
 }
 
 @media (max-width:768px) {

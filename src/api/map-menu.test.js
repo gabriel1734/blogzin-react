@@ -2,7 +2,7 @@ import { mapMenu, mapMenuLinks } from './map-menu';
 
 describe('map-menu', () => {
   it('should return a predefined object without data', () => {
-    const menu = mapMenu();
+    const menu = mapMenu(undefined);
     expect(menu.newTab).toBe(false);
     expect(menu.text).toBe('');
     expect(menu.srcImg).toBe('');
@@ -21,7 +21,7 @@ describe('map-menu', () => {
           },
         },
       },
-      menu: [
+      menu_links: [
         {
           id: 2,
           link_text: 'intro',
@@ -38,7 +38,7 @@ describe('map-menu', () => {
     });
 
     expect(menu.newTab).toBe(false);
-    expect(menu.srcImg).toBe('');
+    expect(menu.srcImg).toBe('a.svg');
     expect(menu.links[0].newTab).toBe(false);
     expect(menu.links[0].children).toBe('intro');
     expect(menu.links[0].link).toBe('#intro');

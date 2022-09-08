@@ -2,11 +2,11 @@ import * as Styled from './styles';
 import P from 'prop-types';
 import { Heading } from '../Heading';
 
-export const LogoLink = ({ text, srcImage = '', link }) => {
+export const LogoLink = ({ text, srcImg = '', link }) => {
   return (
     <Heading size="small" uppercase={true}>
       <Styled.Container href={link} target="_self">
-        {srcImage ? <img src={srcImage} alt={text} /> : <span>{text}</span>}
+        {srcImg ? <img src={srcImg} alt={text} /> : <span>{text}</span>}
       </Styled.Container>
     </Heading>
   );
@@ -14,6 +14,6 @@ export const LogoLink = ({ text, srcImage = '', link }) => {
 
 LogoLink.propTypes = {
   text: P.string.isRequired,
-  srcImage: P.string,
+  srcImg: P.string,
   link: P.string.isRequired,
 };

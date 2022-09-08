@@ -11,7 +11,7 @@ exports[`<GridImage /> should render with background 1`] = `
 
 .c6 {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+  grid-template-columns: repeat(3,minmax(200px,1fr));
   gap: 3.2rem;
 }
 
@@ -26,9 +26,9 @@ exports[`<GridImage /> should render with background 1`] = `
 }
 
 .c8:hover {
-  -webkit-transform: scale(1.4) rotate(10deg);
-  -ms-transform: scale(1.4) rotate(10deg);
-  transform: scale(1.4) rotate(10deg);
+  -webkit-transform: scale(1.2) rotate(10deg);
+  -ms-transform: scale(1.2) rotate(10deg);
+  transform: scale(1.2) rotate(10deg);
 }
 
 .c0 {
@@ -55,6 +55,12 @@ exports[`<GridImage /> should render with background 1`] = `
   color: #0A1128;
   font-size: 6.2rem;
   text-transform: uppercase;
+}
+
+@media (max-width:768px) {
+  .c6 {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width:768px) {
@@ -159,7 +165,7 @@ exports[`<GridImage /> should render without background 1`] = `
 
 .c6 {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+  grid-template-columns: repeat(3,minmax(200px,1fr));
   gap: 3.2rem;
 }
 
@@ -174,9 +180,9 @@ exports[`<GridImage /> should render without background 1`] = `
 }
 
 .c8:hover {
-  -webkit-transform: scale(1.4) rotate(10deg);
-  -ms-transform: scale(1.4) rotate(10deg);
-  transform: scale(1.4) rotate(10deg);
+  -webkit-transform: scale(1.2) rotate(10deg);
+  -ms-transform: scale(1.2) rotate(10deg);
+  transform: scale(1.2) rotate(10deg);
 }
 
 .c0 {
@@ -203,6 +209,12 @@ exports[`<GridImage /> should render without background 1`] = `
   color: #0A1128;
   font-size: 6.2rem;
   text-transform: uppercase;
+}
+
+@media (max-width:768px) {
+  .c6 {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width:768px) {

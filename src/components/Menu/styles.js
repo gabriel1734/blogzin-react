@@ -16,11 +16,10 @@ export const Container = styled.div`
     top: 0;
     left: 0;
     right: 0;
-    padding-top: 3.5rem;
     border-bottom: ${theme.colors.mediumGray};
     background-color: ${theme.colors.white};
     transition: all .3s ease-in-out;
-    height: 10vh;
+    height: 12vh;
 
     > ${SectionContainer}{
       padding-top: 0;
@@ -32,10 +31,7 @@ export const Container = styled.div`
       margin-top: 0;
       margin-bottom: 0;
     }
-    @media (max-width: 1180px) {
-      height: 18vh;
-      padding-top: 0;
-    }
+
     @media ${theme.media.lteMedium} {
       height: 100vh;
       visibility: hidden;

@@ -13,9 +13,14 @@ export const Grid = styled.div`
   ${({ theme }) => css`
     
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
     gap: ${theme.spacings.large};
+    
+    @media ${theme.media.lteMedium} {
+      grid-template-columns: 1fr;
+    }
   `}
+  
 `;
 export const GridElement = styled.div`
   ${() => css`
@@ -28,7 +33,7 @@ export const Image = styled.img`
     width: 100%;
     transition: all .5s ease-in-out;
     &:hover {
-      transform: scale(1.4) rotate(10deg);
+      transform: scale(1.2) rotate(10deg);
     }
   `}
 `;
