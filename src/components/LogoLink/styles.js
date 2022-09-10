@@ -9,7 +9,7 @@ export const Container = styled.a`
     
 
     > img {
-      max-height: 3rem;
+      height: 3rem;
     }
   `}
 `;
