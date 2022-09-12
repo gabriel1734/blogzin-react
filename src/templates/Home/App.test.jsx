@@ -1,9 +1,9 @@
-import App from '.';
+import Home from '.';
 import { renderTheme } from '../../styles/render-theme';
 
-describe('App', () => {
+describe('Home', () => {
   it('should render correctly', () => {
-    const { container } = renderTheme(<App />);
+    const { container } = renderTheme(<Home />);
     expect(container).toMatchSnapshot();
   });
 });
