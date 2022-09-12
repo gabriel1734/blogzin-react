@@ -36,4 +36,8 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 700;
     transition: all .8s ease;
   }
+  .table{
+    width: 100%;
+    overflow-y: auto;
+  }
 `;

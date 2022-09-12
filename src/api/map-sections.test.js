@@ -104,7 +104,7 @@ describe('map-sections', () => {
     );
     expect(data.srcImg).toBe('a.svg');
     expect(data.background).toBe(true);
-    expect(data.sectionId).toBe(4);
+    expect(data.sectionId).toBe('home');
   });
 
   it('should map section content', () => {
@@ -129,7 +129,7 @@ describe('map-sections', () => {
     );
     expect(data.srcImg).toBe('');
     expect(data.background).toBe(false);
-    expect(data.sectionId).toBe(4);
+    expect(data.sectionId).toBe('intro');
   });
 
   it('should map section content without data', () => {
